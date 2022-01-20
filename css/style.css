@@ -1,0 +1,876 @@
+@charset "utf-8";
+
+/* -------------------------------------------------------------------
+
+[Table of contents]
+
+01. Intro
+02. Navbar
+03. Women
+04. About
+05. Services
+06. Portfolio
+07. Testimonials
+08. Contact
+09. Footer
+
+------------------------------------------------------------------- */
+
+/*** 01. Intro ***/
+
+body,
+html {
+  overflow-x: hidden;
+}
+body {
+  position: relative;
+}
+.overlay {
+  background: #1b1b1b;
+  color: #fff;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+}
+.spinner {
+  margin: 300px auto;
+  width: 60px;
+  height: 60px;
+  position: relative;
+}
+.cube1,
+.cube2 {
+  background-color: #fff;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-animation: sk-cubemove 1.8s infinite ease-in-out;
+  animation: sk-cubemove 1.8s infinite ease-in-out;
+}
+.cube2 {
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s;
+}
+@-webkit-keyframes sk-cubemove {
+  25% {
+    -webkit-transform: translateX(42px) rotate(-90deg) scale(0.5);
+  }
+  50% {
+    -webkit-transform: translateX(42px) translateY(42px) rotate(-180deg);
+  }
+  75% {
+    -webkit-transform: translateX(0px) translateY(42px) rotate(-270deg)
+      scale(0.5);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+  }
+}
+@keyframes sk-cubemove {
+  25% {
+    transform: translateX(42px) rotate(-90deg) scale(0.5);
+    -webkit-transform: translateX(42px) rotate(-90deg) scale(0.5);
+  }
+  50% {
+    transform: translateX(42px) translateY(42px) rotate(-179deg);
+    -webkit-transform: translateX(42px) translateY(42px) rotate(-179deg);
+  }
+  50.1% {
+    transform: translateX(42px) translateY(42px) rotate(-180deg);
+    -webkit-transform: translateX(42px) translateY(42px) rotate(-180deg);
+  }
+  75% {
+    transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5);
+    -webkit-transform: translateX(0px) translateY(42px) rotate(-270deg)
+      scale(0.5);
+  }
+  100% {
+    transform: rotate(-360deg);
+    -webkit-transform: rotate(-360deg);
+  }
+}
+
+/*** 02. Navbar ***/
+
+.Selena_navbar {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 10;
+  padding: 30px 0px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.Selena_navbar .inner {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Selena_navbar .logo {
+  width: auto;
+}
+.Selena_navbar .menu_list ul {
+  margin: 0px;
+  list-style-type: none;
+}
+.Selena_navbar .menu_list ul li {
+  margin: 0px;
+  display: inline-block;
+  margin-right: 20px;
+}
+.Selena_navbar .menu_list ul li:last-child {
+  margin-right: 0px;
+}
+.Selena_navbar .menu_list ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Saira";
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.Selena_navbar .menu_list ul li a:hover {
+  color: #ff6633;
+}
+
+/*** 03. Women ***/
+
+.Selena_wrap_all,
+.Selena_section {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+}
+.Selena_wrap_all,
+.Selena_wrap_all * {
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box; /* Opera/IE 8+ */
+}
+
+#home {
+  height: 100vh;
+}
+.Selena_women_wrap {
+  /*background-image: url('../img/women/womenBackground.jpg');*/
+  background-color: #111;
+  height: 100vh;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.Selena_women_wrap .women_texts {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  opacity: 1;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 0px 20px;
+}
+.Selena_women_wrap .women_texts span {
+  font-family: "Saira";
+}
+.Selena_women_wrap .women_texts h3 {
+  color: #fff;
+  font-size: 60px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  position: relative;
+  line-height: 1.3;
+}
+.Selena_women_wrap .women_texts .subtitle {
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 30px;
+  display: inline-block;
+  color: #fff;
+  text-align: center;
+  /*font-family: arial;*/
+}
+.Selena_women_wrap .women_texts .name {
+  margin-bottom: 30px;
+}
+.Selena_women_wrap .women_texts > h3,
+.Selena_women_wrap .women_texts > h3 span {
+  font-size: 50px;
+}
+.Selena_women_wrap .www.a {
+  max-width: 550px;
+  width: 100%;
+  margin: 0px auto;
+}
+.Selena_women_wrap .women_texts .name span {
+  color: #ff6633;
+}
+
+#scrolldown a {
+  padding-top: 60px;
+}
+#scrolldown a span {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  width: 30px;
+  height: 50px;
+  margin-left: -15px;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  box-sizing: border-box;
+}
+#scrolldown a span::before {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  content: '';
+  width: 6px;
+  height: 6px;
+  margin-left: -3px;
+  background-color: #fff;
+  border-radius: 100%;
+  -webkit-animation: sdb10 2s infinite;
+  animation: sdb10 2s infinite;
+  box-sizing: border-box;
+}
+@-webkit-keyframes sdb10 {
+  0% {
+    -webkit-transform: translate(0, 0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    -webkit-transform: translate(0, 20px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes sdb10 {
+  0% {
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    transform: translate(0, 20px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.group_name {
+  display: flex;
+    justify-content: center;
+}
+.dynamic-txt {
+  list-style: none;
+  color: #ff6633;
+  overflow: hidden;
+  line-height: 85px;
+  height: 95px;
+  /*background-color: red;*/
+}
+.dynamic-txt li {
+  font-size: 60px;
+  position: relative;
+  text-align: left;
+  top: 0px;
+  animation: slide 12s steps(4) infinite;
+}
+@keyframes slide {
+ 
+  100%{
+top: -360px;
+  }
+}
+.dynamic-txt li ::after {
+  content: "";
+  left: 0%;
+  position: absolute;
+  border-left: 2px solid #ff6633;
+  height: 100%;
+  width: 100%;
+  animation: typing 3s steps(10) infinite;
+  background-color: #111;
+}
+@keyframes typing {
+  40%,60%{
+left: calc(100% + 30px);
+  }
+  100%{
+left: 0;
+  }
+}
+
+
+/*** 04. About ***/
+
+.Selena_about {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  padding-bottom: 100px;
+  position: relative;
+  padding-top: 100px;
+  background-color: #fff;
+}
+.Selena_about .about_inner {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  display: flex;
+}
+.Selena_about .about_inner .left {
+  width: 40%;
+  height: auto;
+  padding-right: 10px;
+}
+.Selena_about .about_inner .right {
+  width: 60%;
+  height: auto;
+  padding-left: 50px;
+}
+.Selena_about .about_inner .right .title {
+  margin-bottom: 22px;
+}
+.Selena_about .about_inner .right .title span.top {
+  font-family: "Saira";
+  display: inline-block;
+  margin-bottom: 5px;
+  color: #ff6633;
+}
+.Selena_about .about_inner .right .buttons {
+  float: left;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.Selena_about .about_inner .right .buttons .Selena_button:first-child {
+  padding-right: 40px;
+}
+.progress_inner {
+  width: 100%;
+  margin-bottom: 15px;
+}
+.progress_inner:last-child {
+  margin-bottom: 31px;
+}
+.progress_inner > span {
+  margin: 0px 0px 7px 0px;
+  width: 100%;
+  display: block;
+  text-align: left;
+  font-family: "Saira";
+}
+.progress_inner span.label {
+  font-size: 13px;
+  font-weight: 700;
+  color: #333;
+  text-transform: uppercase;
+  font-family: "Saira";
+}
+.progress_inner span.number {
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #333;
+  float: right;
+  font-family: "Saira";
+}
+.progress_inner .background {
+  background: #07081f;
+  width: 100%;
+  min-width: 100%;
+  position: relative;
+  height: 8px;
+}
+.progress_inner .background .bar_in {
+  height: 100%;
+  background: #333;
+  width: 0px;
+  overflow: hidden;
+}
+.progress_inner .background .bar {
+  width: 0px;
+  height: 100%;
+}
+.progress_inner .background .bar.open {
+  -webkit-animation: wow 3s cubic-bezier(0.165, 0.84, 0.44, 1); /* Safari 4+ */
+  -moz-animation: wow 3s cubic-bezier(0.165, 0.84, 0.44, 1); /* Fx 5+ */
+  animation: wow 3s cubic-bezier(0.165, 0.84, 0.44, 1); /* IE 10+ */
+  width: 100%;
+}
+@-webkit-keyframes wow {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@-moz-keyframes wow {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@keyframes wow {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+.progress-bar {
+  width: 75%;
+  background-color: #ff6633;
+}
+.progress {
+  height: 0.5rem;
+}
+.Selena_button a {
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  background-color: #ff6633;
+  font-weight: 500;
+  padding: 7px 27px;
+  border-radius: 4px;
+  border: 3px solid #ff6633;
+  font-family: "Saira";
+  transition: all 0.3s ease;
+}
+.left {
+  max-width: 100%;
+  background-image: url(../img/about/womenAbout.jpg);
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 2px solid #ff6633;
+}
+.box {
+  background: #f7f7f7;
+  padding: 15px;
+  margin-top: 20px;
+  text-align: center;
+}
+.svg {
+  width: 40px;
+  height: 40px;
+}
+.icon_box {
+  margin-bottom: 20px;
+}
+.title {
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 19px;
+  font-family: "Saira";
+}
+
+/**** 5. Services ****/
+.Selena_services_wrap {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  background-color: #bdbdbd;
+  padding: 50px 0px 60px 0px;
+  position: relative;
+}
+
+/**** 6.portfolio ***/
+
+.Selena_portfolio {
+ /* width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  padding: 94px 0px 60px 0px;
+  padding-bottom: 5%;
+  padding-top: 5%;*/
+  margin-top: 5%;
+  margin-bottom: 15%;
+  background-color: #fff;
+}
+.Selena_portfolio .container {
+  height: 450px;
+}
+.Selena_title {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  text-align: center;
+}
+.Selena_title span {
+  color: #ff6633;
+  font-family: "Saira";
+}
+ul.filters {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 30px 0;
+  cursor: pointer;
+  height: auto;
+}
+.Selena_content {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+ul.filters > li {
+  list-style: none;
+  display: inline-block;
+}
+ul.filters > li > a {
+  display: block;
+  color: #616161;
+  text-decoration: none;
+  padding: 5px 20px;
+  /*font-size: 20px;*/
+}
+ul.filters > li > a:hover {
+  background-color: #ff6633;
+}
+ul.filters > li.active > a {
+  color: black;
+  background-color: #ff6633;
+}
+.card {
+  position: relative;
+  margin-bottom: 50px;
+  color: #000;
+  border-radius: 0;
+  border: 1px solid #eee;
+  background-color: #fff;
+  box-shadow: 1px 1px 1.5px rgba(0, 0, 0, 0.075);
+}
+.card-head {
+  position: relative;
+  overflow: hidden;
+}
+.card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  -webkit-transition: ease-in-out 0.2s;
+  -moz-transition: ease-in-out 0.2s;
+  -ms-transition: ease-in-out 0.2s;
+  transition: ease-in-out 0.2s;
+}
+.card-body {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+h4.title {
+  color: #ff6633;
+  font-size: 1.2rem;
+  margin-bottom: 0;
+}
+.card-btn {
+  margin-bottom: -40px;
+  font-size: 0.9rem;
+  background-color: #fff;
+  color: #222;
+  border: 1px solid #eee;
+  border-radius: 0;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.card-btn:hover {
+  background-color: #ff6633;
+  color: #fff;
+}
+
+/*** 07. Testimonial ***/
+
+.Selena_testimonials {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  background-color: #bdbdbd;
+  padding: 60px 0px 60px 0px;
+  position: relative;
+}
+.Testimonial_img li {
+  width: 80px;
+  height: 80px;
+  text-indent: 0;
+  border: 2px solid #ff6633;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.Testimonial_img {
+  margin-top: 50px;
+}
+.avatar_personne {
+  max-width: 100%;
+}
+.carousel-item h3 span {
+  color: #ff6633;
+  font-family: "Saira";
+}
+.carousel-item span {
+  color: black;
+  font-family: "Saira";
+}
+.Testimonial_img .carousel-indicators {
+  position: static;
+  margin: 0;
+}
+
+/*** 8. Contact ***/
+
+.Selena_contact {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  background-color: #fff;
+  padding-top: 95px;
+}
+
+.Selena_contact .contact_inner {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  padding-top: 70px;
+  display: flex;
+  margin-bottom: 70px;
+}
+.Selena_contact .contact_inner .left_contact {
+  width: 40%;
+  height: auto;
+}
+.Selena_contact .contact_inner .left_contact ul {
+  margin: 0px;
+  list-style-type: none;
+}
+.Selena_contact .contact_inner .left_contact ul li {
+  margin: 0px 0px 10px 0px;
+  width: 100%;
+  float: left;
+  list-style-type: none;
+}
+.Selena_contact .contact_inner .left_contact ul li .inner {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  position: relative;
+}
+.Selena_contact .contact_inner .left_contact ul li .inner .svg {
+  position: absolute;
+  left: 0px;
+  top: 8px;
+  color: #ff214f;
+  width: 20px;
+  height: 20px;
+}
+.Selena_contact .contact_inner .left_contact ul li .inner span {
+  padding-left: 35px;
+}
+.Selena_contact .contact_inner .left_contact ul li .inner span a {
+  text-decoration: none;
+  color: #333;
+  font-family: "Saira";
+
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.Selena_contact .contact_inner .left_contact ul li .inner span a:hover {
+  color: #ff6633;
+}
+.Selena_contact .contact_inner .right_contact {
+  width: 60%;
+  height: auto;
+  position: relative;
+  top: -10px;
+}
+.Selena_contact .contact_inner .right_contact .first_row {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  margin-bottom: 15px;
+}
+.Selena_contact .contact_inner .right_contact .first_row ul {
+  margin: 0px 0px 0px -20px;
+  list-style-type: none;
+}
+.Selena_contact .contact_inner .right_contact .first_row ul li {
+  margin: 0px 0px 25px 0px;
+  width: 50%;
+  float: left;
+  padding-left: 20px;
+}
+.Selena_contact .contact_inner .right_contact .first_row ul li input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #333;
+  width: 100%;
+  padding: 0px 20px 30px 0px !important;
+  color: #333;
+
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.Selena_contact .contact_inner .right_contact .first_row ul li input:focus {
+  outline: none;
+  background-color: transparent;
+  border-bottom-color: #000;
+}
+.Selena_contact .contact_inner .right_contact .second_row {
+  width: 100%;
+  height: auto;
+  float: left;
+  clear: both;
+  margin-bottom: 20px;
+  margin-left: 42px;
+}
+.Selena_contact .contact_inner .right_contact textarea {
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid #333;
+  width: 93.7%;
+  padding: 0px;
+  color: #333;
+
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.Selena_contact .contact_inner .right_contact textarea:focus {
+  outline: none;
+  background-color: transparent;
+  border-bottom-color: #000;
+}
+
+.Selena_contact .empty_notice {
+  color: #ff214f;
+  margin-bottom: 7px;
+  display: none;
+  text-align: left;
+}
+
+.Selena_contact .contact_error {
+  color: #ff214f;
+  text-align: left;
+}
+.Selena_contact .returnmessage {
+  color: #0064ff;
+  margin-bottom: 7px;
+  text-align: left;
+}
+
+.right_contact .Selena_button {
+  margin-left: 42px;
+}
+
+.Selena_contact .Selena_title span {
+  color: #ff6633;
+}
+
+/** 9. footer **/
+
+.Selena_footer {
+  position: relative;
+  background-color: #111;
+  width: 100%;
+  float: left;
+  padding: 60px 0px;
+}
+.Selena_footer .footer_inner {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.Selena_footer .left_footer p {
+  color: #fff;
+  font-family: "Saira";
+  margin-bottom: 10px;
+}
+.social_footer .svg {
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border-radius: 10%;
+  margin: 0px 10px 0px 0px;
+  padding: 3%;
+}
+.social_footer {
+  margin-left: 25px;
+}
+.left_footer span {
+  color: #ff6633;
+}
+
+
+

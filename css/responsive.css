@@ -1,0 +1,35 @@
+@charset "utf-8";
+@media (max-width: 1200px) {
+}
+@media (max-width: 1040px) {
+	.Selena_about .about_inner .left{display: none;}
+	.Selena_about .about_inner .right{width: 100%;left: 0px;padding-left: 0px;}
+	.Selena_about .about_inner.kairo_appear.load .right{left: 0px;}
+	.Selena_contact .contact_inner .right_contact textarea{width: 92%;}
+}
+
+@media (max-width: 991px){
+	.card-btn{padding-left: 35px;padding-right: 35px;}
+}
+
+
+
+@media (max-width: 768px) {
+	
+	.Selena_about .about_inner .right .title h3{font-size: 32px;}
+	.Selena_contact .contact_inner{flex-direction: column;}
+	.Selena_contact .contact_inner .left_contact{width: 100%;margin-bottom: 30px;}
+	.Selena_contact .contact_inner .right_contact{width: 100%;}
+	.Selena_contact .contact_inner .right_contact .first_row ul li{width: 100%; padding: 0px;}
+	.Selena_contact .contact_inner .right_contact .first_row ul{margin: 0px;}
+	.Selena_contact .contact_inner .right_contact textarea {width: 91%;}
+	.Selena_footer .footer_inner{flex-direction: column;}
+	.Selena_footer .footer_inner .left{margin-bottom: 10px;}	
+	.card-btn {padding-left: 14px;padding-right: 14px;}
+}
+@media (max-width: 480px) {	
+	.Selena_about .about_inner .right .title h3{font-size: 25px;}
+	.Selena_about .about_inner .right .buttons{flex-direction: column;align-items: baseline;}
+	.Selena_about .about_inner .right .buttons .Selena_button:first-child{padding-right: 0px;margin-bottom: 20px;}
+	.Selena_contact .contact_inner .right_contact textarea{width: 89%;}
+}
